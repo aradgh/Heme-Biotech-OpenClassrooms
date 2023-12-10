@@ -7,7 +7,7 @@ import java.util.Map;
 public class WriteSymptomDataToFile implements ISymptomWriter{
     @Override
     public void writeSymptoms(Map<String, Integer> symptoms) throws IOException {
-        FileWriter writer = new FileWriter("result.out");
+        FileWriter writer = new FileWriter("Project02Eclipse/result.out");
         for (Map.Entry<String, Integer> symptomSet : symptoms.entrySet()) {
             writer.write(symptomSet.getKey() + ":" + symptomSet.getValue() + "\n");
         }
